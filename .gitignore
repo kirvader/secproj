@@ -1,0 +1,5 @@
+falconenv/
+__pycache__/
+venvs/
+app.pyc
+models.pyc
