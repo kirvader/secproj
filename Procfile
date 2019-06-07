@@ -1,2 +1,2 @@
-web: gunicorn app:api -b 0.0.0.0:5000
+web: gunicorn app:api -b localhost:8000
 
