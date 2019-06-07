@@ -1,0 +1,6 @@
+django
+gunicorn
+django-heroku
+falcon
+psycopg2
+peewee
