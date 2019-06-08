@@ -1,2 +1,1 @@
-web: gunicorn app:api -b localhost:17995
-
+web: gunicorn app:api -b localhost$PORT
