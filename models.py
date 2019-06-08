@@ -5,7 +5,7 @@ psql_db = PostgresqlDatabase(
     'kira1',
     user='kira1',
     password='27701757',
-    host='127.0.0.1')
+    host='0.0.0.0')
 
 
 def init_tables():
