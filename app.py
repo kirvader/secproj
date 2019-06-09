@@ -1,10 +1,6 @@
 from models import *
 from playhouse.shortcuts import model_to_dict
-import json, falcon, os, psycopg2
-
-DATABASE_URL = os.environ['DATABASE_URL']
-
-conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+import json, falcon
 
 class UserIdResource():
      def on_get(self, req, resp, user_id):
