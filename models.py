@@ -1,11 +1,14 @@
 from peewee import *
-import uuid
+import uuid, os
+
+DATABASE_URL = os.environ['DATABASE_URL']
+
 
 psql_db = PostgresqlDatabase(
     'orgdb',
     user='orguser',
     password='27701757',
-    host='0.0.0.0')
+    host=DATABASE_URL)
 
 
 def init_tables():
