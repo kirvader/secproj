@@ -4,7 +4,7 @@ import json, falcon
 import os
 import psycopg2
 
-DATABASE_URL = os.environ['stark-savannah-57538.herokuapp']
+DATABASE_URL = os.environ['stark-savannah-57538.herokuapp.com']
 
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
