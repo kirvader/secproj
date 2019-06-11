@@ -4,9 +4,9 @@ import json, falcon
 import os
 import psycopg2
 
-#DATABASE_URL = os.environ['DATABASE_URL']
+DATABASE_URL = os.environ['stark-savannah-57538.herokuapp']
 
-#conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 class UserIdResource():
      def on_get(self, req, resp, user_id):
