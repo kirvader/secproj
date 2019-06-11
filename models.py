@@ -2,8 +2,8 @@ from peewee import *
 import uuid
 
 psql_db = PostgresqlDatabase(
-    'kira1',
-    user='kira1',
+    'orgdb',
+    user='orguser',
     password='27701757',
     host='0.0.0.0')
 
