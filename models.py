@@ -5,7 +5,7 @@ psql_db = PostgresqlDatabase(
     'orgdb',
     user='orguser',
     password='27701757',
-    host='0.0.0.0')
+    host='stark-savannah-57538.herokuapp.com')
 
 
 def init_tables():
