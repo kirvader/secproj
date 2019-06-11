@@ -1,1 +1,1 @@
-web: gunicorn app:api -b 0.0.0.0:$PORT
+web: gunicorn app:api -b stark-savannah-57538.herokuapp.com
