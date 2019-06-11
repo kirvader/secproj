@@ -1,14 +1,12 @@
 from peewee import *
 import uuid, os
+import urlparse
 
-DATABASE_URL = os.environ['DATABASE_URL']
+urlparse.uses_netloc.append('postgres')
+url = urlparse.urlparse(os.environ['DATABASE_URL'])
 
 
-psql_db = PostgresqlDatabase(
-    'orgdb',
-    user='orguser',
-    password='27701757',
-    host=DATABASE_URL)
+psql_db = (database=url.path[1:], user=url.username, password=url.password, host=url.hostname, port=url.port)
 
 
 def init_tables():
