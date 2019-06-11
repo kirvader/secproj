@@ -4,7 +4,7 @@ import json, falcon
 import os
 import psycopg2
 
-DATABASE_URL = os.environ['0.0.0.0:8000']
+DATABASE_URL = os.environ['DATABASE_URL']
 
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
